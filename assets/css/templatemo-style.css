@@ -1,0 +1,1099 @@
+/*
+
+Reflux Template
+
+https://templatemo.com/tm-531-reflux
+
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#page-wraper {
+    background: url(../images/page-bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+}
+
+
+/* Basic */
+
+body {
+    overflow-x: hidden;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
+h4 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.25px;
+}
+
+img {
+    width: 100%;
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.main-nav {
+    text-align: center;
+}
+
+.main-nav li:last-child a {
+    border-bottom: 2px solid #fff;
+}
+
+.main-nav li {
+    display: block;
+}
+
+.main-nav li a {
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    transition: all 0.5s;
+    border-top: 2px solid #fff;
+}
+
+.main-nav li:hover a,
+.main-nav li.active a {
+    background: #fff;
+    color: #8c363e;
+}
+
+/* Sidebar Menu */
+
+.menu .image {
+    margin-top: 60px;
+}
+
+.menu .image img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.menu .author-content {
+    margin: 40px 0px 60px 0px;
+}
+
+.menu .author-content h4 {
+    margin-bottom: 0px;
+}
+
+.menu .author-content span {
+    font-size: 13px;
+    font-style: italic;
+    color: #fff;
+}
+
+.menu .social-network {
+    margin-top: 60px;
+}
+
+.menu .copyright-text {
+    position: relative;
+    margin-top: 60px;
+}
+
+.menu .copyright-text p {
+    border-top: 1px solid rgba(250, 250, 250, 0.1);
+    display: inline-block;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    font-size: 13px;
+}
+
+.menu:before,
+.menu:after {
+    content: "";
+    display: table;
+}
+
+.menu:after {
+    clear: both;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.menu {
+  left: 10%;
+
+  /* 💡 添加标准写法，增强兼容性 */
+  transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
+  -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+
+  -webkit-overflow-scrolling: touch;
+  background-color: #a43f49;
+  box-sizing: border-box;
+  height: 100vh;
+  max-height: 100vh !important;
+  max-width: 80vw !important;
+  min-width: 45px !important;
+  outline: none;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  padding: 0;
+  position: fixed !important;
+  top: calc(0px);
+  width: 20%;
+  will-change: transform;
+  z-index: 9999 !important;
+}
+
+#menu-toggle {
+    z-index: 999;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #a43f49;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display: inline-block;
+    line-height: 60px;
+}
+
+#menu-close {
+    cursor: pointer;
+    text-align: right;
+    color: #a43f49;
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    display: inline-block;
+    line-height: 60px;
+}
+
+
+/* Section */
+
+.section {
+    color: #fff;
+    width: 55%;
+    right: 10%;
+    left: 35%;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 80px;
+    border-bottom: 3px solid rgba(250, 250, 250, 0.25);
+}
+
+.section-heading {
+    text-align: center;
+    padding: 80px 45px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.section-heading .line-dec {
+    width: 60px;
+    height: 3px;
+    background-color: #a43f49;
+    margin: 10px auto;
+}
+
+.section-heading span {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+
+/* Buttons */
+
+.white-button a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #fff;
+    color: #a43f49;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.white-button a:hover {
+    background-color: #a43f49;
+    color: #fff;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #a43f49;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    outline: none;
+    background-color: #a43f49;
+    color: #fff;
+}
+
+
+/* Left & Right Post */
+
+.right-image-post {
+    margin-top: 60px;
+    padding-top: 60px;
+    border-top: 2px solid rgba(250, 250, 250, 0.1);
+}
+
+.left-image img,
+.right-image img {
+    border-radius: 5px;
+}
+
+.right-image-post h4,
+.left-image-post h4 {
+    margin-top: 30px;
+}
+
+.right-image-post p,
+.left-image-post p {
+    margin-top: 20px;
+}
+
+.right-image-post .white-button,
+.left-image-post .white-button {
+    margin-top: 30px;
+}
+
+
+/* Services */
+
+.my-services .col-md-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.service-item {
+    margin-bottom: 10px;
+    padding: 50px;
+    background-color: rgba(250, 250, 250, 0.1);
+    transition: all 0.5s;
+}
+
+
+.service-item h4 {
+    transition: all 0.5s;
+}
+
+.service-item p {
+    transition: all 0.5s;
+}
+
+.service-item:hover {
+    background-color: rgba(250, 250, 250, 1);
+}
+
+.service-item:hover h4 {
+    color: #1e1e1e;
+}
+
+.service-item:hover p {
+    color: #4a4a4a;
+}
+
+.service-item .service-icon {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+/* My Work */
+
+section.my-work .section-heading {
+    text-align: center;
+    padding: 80px 45px 50px 45px;
+}
+
+.isotope-wrapper {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.isotope-toolbar input[type="radio"] {
+    display: none;
+}
+
+.isotope-toolbar span {
+    text-transform: capitalize;
+    display: inline-block;
+    margin-right: 15px;
+    padding-bottom: 3px;
+    font-size: 15px;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    transform: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+.isotope-toolbar input[type="radio"]:checked + span {
+    color: #a43f49;
+    border-bottom: 2px solid #a43f49;
+}
+
+.isotope-box {
+    position: relative;
+    width: 100%;
+}
+
+.isotope-toolbar {
+    text-align: center;
+    margin: 10px;
+}
+
+.isotope-toolbar p {
+    border-top: 1px solid #fff;
+    padding-top: 15px;
+}
+
+.isotope-toolbar a {
+    color: #fff;
+}
+
+.isotope-item {
+    position: relative;
+    width: 48%;
+    margin: 1%;
+    border-bottom: 2px solid rgba(250,250,250,0.1);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.isotope-item img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+section.contact-me {
+    border-bottom: none;
+}
+
+#contact input {
+    background-color: rgba(250,250,250,0.1);
+    border: 1px solid rgba(250,250,250,1);
+    border-radius: 0px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    padding-left: 15px;
+}
+
+#contact input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#contact textarea {
+    background-color: rgba(250,250,250,0.1);
+    border: 1px solid rgba(250,250,250,1);
+    border-radius: 0px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 14px;
+    height: 180px;
+    max-height: 220px;
+    line-height: 40px;
+    width: 100%;
+    padding-left: 15px;
+}
+
+#contact textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#contact {
+    text-align: center;
+}
+
+@media screen and (max-width: 1680px) {
+    .menu {
+        left: 5%;
+    }
+
+    .section {
+        color: #fff;
+        width: 65%;
+        right: 5%;
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 1680px) and (min-width: 846px) { 
+    .menu .social-network ul li a {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+    }
+
+    .menu .social-network ul li {
+        margin: 0;
+    }
+
+    .menu .image {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .menu {
+        left: 0%;
+    }
+
+    .right-image-post h4,
+    .left-image-post h4 {
+        margin-top: 0px;
+    }
+
+    .right-image-post p,
+    .left-image-post p {
+        margin-top: 15px;
+    }
+
+    .right-image-post .white-button,
+    .left-image-post .white-button {
+        margin-top: 25px;
+    }
+
+}
+
+.menu .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 846px) {
+    .menu {
+        width: 25%;
+    }
+}
+
+#menu-toggle,
+#menu-close {
+    display: none;
+}  
+
+@media screen and (max-width: 845px) {        
+    #menu-toggle,
+    #menu-close {
+        display: inline-block;
+    }    
+
+    .menu {        
+        width: 320px;
+        -webkit-transform: translateX(-100%) !important;
+        transform: translateX(-100%) !important;
+        transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
+        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1), -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+    }
+
+    .menu .image {
+        margin-top: 40px;        
+    }
+
+    .menu .image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .menu .author-content {
+        margin: 20px 0px 40px 0px;
+    }
+
+    .menu .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .menu.open {
+        display: inline-block;
+        -webkit-transform: translateX(0) !important;
+                transform: translateX(0) !important;
+    }
+
+    .responsive-nav {
+        display: inline-block;
+    }
+    .section {
+        width: 94%;
+        right: 3%;
+        left: 3%;
+    }
+    .isotope-item {
+        width: 94%;
+        margin: 3%;
+    }
+    .left-image-post img {
+        margin-bottom: 30px;
+    }
+    .right-image-post img {
+        margin-top: 30px;
+    }
+    .isotope-item {
+        border-bottom: none;
+        text-align: center;
+    }
+    .isotope-toolbar {
+        margin-bottom: 20px;
+    }
+    
+#toggle-btn {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+}
+
+.service-icon i{
+    font-size:60px;
+    color:white;
+    margin-bottom:5px;
+}
+
+.service-item:hover .service-icon i{
+    color:#e74c3c;
+}
+
+.collapsed {
+  max-height: 180px;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.5s ease;
+}
+
+
+/*卡片*/
+
+
+/* === 卡片样式 === */
+.card-item {
+  width: 230px;
+  height: 250px;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 16px 20px;
+  border-radius: 12px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.card-item .title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.card-item .desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+/* === 滚动容器 === */
+
+.slider-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px; /* 卡片之间的水平间距 */
+  animation: scrollLoop linear infinite;
+  animation-play-state: running;
+}
+
+.slider-inner:hover {
+  animation-play-state: paused;
+}
+
+/* === 自带滑动的备用容器（可保留） === */
+.article-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  gap: 24px;
+  padding-bottom: 12px;
+  margin-top: 20px;
+  scrollbar-width: none; 
+}
+
+.article-slider::-webkit-scrollbar {
+  height: 6px;
+}
+
+.article-slider::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+/* === 响应式 === */
+@media screen and (max-width: 768px) {
+  .card-item {
+    flex: 0 0 80%;
+    min-width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-item {
+    padding: 14px 16px;
+  }
+
+  .card-item .title {
+    font-size: 16px;
+  }
+
+  .card-item .desc {
+    font-size: 14px;
+  }
+}
+
+/*--------------------------------*/
+
+/* 卡片网格：在桌面端两列，移动端一列 */
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); /* 每张卡片最小480px */
+  gap: 2rem;
+  padding: 0 1rem;
+  justify-content: center;
+}
+
+/* 更大、更厚实的卡片 */
+.company-card {
+  position: relative;
+  max-width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-radius: 20px;
+  padding: 2.5rem 2rem 2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  animation: fadeUp 0.6s ease both;
+}
+
+/* 悬停微动 */
+.company-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+}
+
+/* LOGO放大 */
+.company-logo {
+  max-height: 80px;
+  width: auto;
+}
+
+
+/* 徽章微调大小和间距 */
+.badge {
+  padding: 0.4em 1.1em;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 9999px;
+  color: #fff;
+  letter-spacing: 0.3px;
+}
+.badge.invested { background: #16a34a; }
+.badge.current  { background: #2563eb; }
+
+/* 标题与描述放大 */
+.company-body h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.company-body p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #e8e8e8;
+}
+
+/* 信息列表适配放大排版 */
+.info-list {
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+.info-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+}
+.info-list i {
+  color: #a43f49;
+  font-size: 1.1rem;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* 移动端优化：单列显示 + 缩放 */
+@media screen and (max-width: 768px) {
+  .company-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .company-card {
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+  }
+  .company-body h3 {
+    font-size: 1.5rem;
+  }
+  .company-body p {
+    font-size: 1rem;
+  }
+}
+
+.article-slider-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.article-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+}
+
+
+.card-item {
+  min-width: 250px;
+  flex: 0 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  color: white;
+  text-align: left;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+
+
+.insight-summary {
+  margin-top: 40px;
+  position: relative;
+  padding: 30px 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #a43f49;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.insight-summary .quote-icon {
+  position: absolute;
+  top: -18px;
+  left: 16px;
+  font-size: 28px;
+  color: #a43f49;
+  background: #fff;
+  border-radius: 50%;
+  padding: 6px 8px;
+}
+
+.insight-summary .insight-content {
+  padding-left: 8px;
+}
+
+.insight-summary p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+@media screen and (max-width: 768px) {
+  .insight-summary {
+    padding: 24px 18px;
+  }
+
+  .insight-summary p {
+    font-size: 1rem;
+  }
+
+  .insight-summary .quote-icon {
+    font-size: 22px;
+    top: -15px;
+    left: 12px;
+  }
+}
+
+.menu {
+  background: rgba(24, 18, 18, 0.75); /* 深灰玻璃感 */
+  backdrop-filter: blur(12px);
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.4);
+  border-right: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+.menu .author-content h4 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  color: #fff;
+}
+
+.menu .author-content span {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+
+.main-nav li a {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+  border-top: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+  padding: 12px 0;
+}
+
+.main-nav li:hover a,
+.main-nav li.active a {
+  background: linear-gradient(to right, #a43f49, #8b2f38);
+  color: #fff;
+  border-radius: 8px;
+  padding-left: 10px;
+  box-shadow: inset 2px 0 0 rgba(255, 255, 255, 0.2);
+}
+
+/* 图标 hover 精修 */
+.menu .social-network ul li a {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ccc;
+  border-radius: 8px;
+}
+.menu .social-network ul li a:hover {
+  background-color: #a43f49;
+  color: #fff;
+}
+
+/* 顶部关闭按钮样式优化 */
+#menu-close {
+  font-size: 18px;
+  color: #a43f49;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Mobile 模式：展开动画更流畅 */
+@media screen and (max-width: 845px) {
+  .menu {
+    transition: transform 0.3s ease;
+  }
+}
+
+
+.toast-success {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.08); /* 半透明白色，适配深色背景 */
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 9999;
+}
+.toast-success.show {
+  opacity: 1;
+}
+
+#form-submit {
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+@keyframes scrollLoop {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* ✅ 让动画暂停于悬停和触摸 */
+  #sliderTrack:hover #sliderInner,
+  #sliderTrack.touching #sliderInner {
+    animation-play-state: paused !important;
+  }
+
+
+  /* ① 让 logo 与徽章在同一条“河流”里顺畅漂流 */
+.company-header{
+  display: flex;          /* 换成弹性布局，握手言欢 */
+  align-items: center;    /* 垂直居中，心有灵犀 */
+  gap: .5rem;             /* 诗意的留白 */
+}
+
+/* ② 约束 logo，去掉看不见的白边 */
+.company-logo{
+  width: 80px;            /* 或你想要的尺寸 */
+  height: 80px;
+  object-fit: contain;    /* 不拉伸、不变形 */
+  flex-shrink: 0;         /* 别让它被压扁 */
+}
+
+/* ③ 徽章本身保持精致，不再“上窜下跳” */
+.badge{
+  display: inline-block;
+  padding: 2px 8px;
+  line-height: 1;         /* 摒弃多余的内建行高 */
+  border-radius: 12px;
+  font-size: .75rem;
+  vertical-align: middle; /* 备用：若未用 flex 仍能对齐 */
+}
+
+.image img {
+  width: 120px;        /* 控制头像尺寸，按需调整 */
+  height: 120px;
+  object-fit: cover;   /* 保持图像比例裁剪，不变形 */
+  border-radius: 50%;  /* 变成圆形头像 */
+  display: block;
+  margin: 0 auto;      /* 水平居中 */
+}
+
+.company-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 420px;
+}
+
+.company-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-list {
+  margin-top: auto;
+}
